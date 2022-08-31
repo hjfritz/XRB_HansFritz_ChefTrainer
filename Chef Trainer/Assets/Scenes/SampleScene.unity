@@ -2279,6 +2279,50 @@ Transform:
   m_Father: {fileID: 5462524709896183939}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &811413557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811413558}
+  - component: {fileID: 811413559}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Cream
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &811413558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811413557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1692731004910483526}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &811413559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811413557}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.021644048, y: 0.022301782, z: 0.020760084}
+  m_Center: {x: -0.000030924268, y: 0.000097838885, z: 0.060332347}
 --- !u!1 &821648024
 GameObject:
   m_ObjectHideFlags: 0
@@ -8871,6 +8915,7 @@ Transform:
   m_Children:
   - {fileID: 1740323279}
   - {fileID: 730939857}
+  - {fileID: 811413558}
   m_Father: {fileID: 543450651850520404}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9016,10 +9061,9 @@ GameObject:
   - component: {fileID: 2032840104557077247}
   - component: {fileID: 2032840104557077246}
   - component: {fileID: 2032840104557077245}
-  - component: {fileID: 2032840104557077248}
   m_Layer: 0
   m_Name: CreamCarton
-  m_TagString: Cream
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9160,19 +9204,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: e0ea296d688a8a2439a5bd4c7716b108, type: 3}
---- !u!65 &2032840104557077248
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032840104557077244}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.02209698, y: 0.02263474, z: 0.017422128}
-  m_Center: {x: 0.00031930752, y: 0.000043518223, z: 0.061876852}
 --- !u!4 &2127710050826900729
 Transform:
   m_ObjectHideFlags: 0

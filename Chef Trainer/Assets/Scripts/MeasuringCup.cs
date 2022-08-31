@@ -13,7 +13,9 @@ public class MeasuringCup : MonoBehaviour
     [SerializeField] private GameObject liquid4;
     [SerializeField] private GameObject _text;
 
+    private bool pour = false;
     private int amount = 0;
+    private float timer = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,16 @@ public class MeasuringCup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (pour)
+        {
+            timer += Time.deltaTime;
+            if (timer > 1)
+            {
+                AddCream();
+                timer = 0;
+            }
+            
+        }
     }
 
     private void AddCream()
@@ -56,7 +67,12 @@ public class MeasuringCup : MonoBehaviour
     {
         if (other.CompareTag("Cream"))
         {
-            AddCream();
+            pour = true;
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        pour = false;
     }
 }
